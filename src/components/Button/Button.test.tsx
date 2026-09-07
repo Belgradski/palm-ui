@@ -3,7 +3,7 @@ import { render, screen, fireEvent} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Button } from './Button';
 
-describe('Button components', () => {
+describe('Button component', () => {
     test('render button with children text', () => {
         render(<Button>Click me</Button>)
         const button = screen.getByText('Click me')
